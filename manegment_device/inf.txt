@@ -1,0 +1,6 @@
+solution :
+1  một hồ có ít nhất một máy 
+2  một hồ có thể có nhiều máy 
+3  một user có thể có nhiều hồ 
+4  mỗi máy có mỗi time gữi data khác nhau 
+5  để 

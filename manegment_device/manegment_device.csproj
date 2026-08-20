@@ -1,0 +1,87 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <OutputType>WinExe</OutputType>
+        <TargetFramework>net9.0-windows</TargetFramework>
+        <Nullable>enable</Nullable>
+        <UseWindowsForms>true</UseWindowsForms>
+        <ImplicitUsings>enable</ImplicitUsings>
+        <LangVersion>preview</LangVersion>
+    </PropertyGroup>
+
+    <ItemGroup>
+      <PackageReference Include="Guna.UI2.WinForms" Version="2.0.4.8" />
+      <PackageReference Include="MySql.Data" Version="26.7.0" />
+      <PackageReference Include="ReaLTaiizor" Version="3.8.2.1" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <Compile Update="Device.cs">
+        <DependentUpon>Manager_device.cs</DependentUpon>
+      </Compile>
+      <Compile Update="Hash.cs">
+        <DependentUpon>Program.cs</DependentUpon>
+      </Compile>
+      <Compile Update="information_device.cs">
+        <DependentUpon>Manager_device.cs</DependentUpon>
+      </Compile>
+      <Compile Update="user_backend.cs">
+        <DependentUpon>Program.cs</DependentUpon>
+      </Compile>
+      <Compile Update="lake.cs">
+        <DependentUpon>Manager_device.cs</DependentUpon>
+      </Compile>
+      <Compile Update="Login_query.cs">
+        <DependentUpon>login_form.cs</DependentUpon>
+      </Compile>
+      <Compile Update="Search_History.cs">
+        <DependentUpon>Program.cs</DependentUpon>
+      </Compile>
+      <Compile Update="login_form.cs">
+        <SubType>Form</SubType>
+        <DependentUpon>Program.cs</DependentUpon>
+      </Compile>
+      <Compile Update="UserControl1.cs">
+        <SubType>UserControl</SubType>
+      </Compile>
+      <Compile Update="Sign_form.cs">
+        <SubType>Form</SubType>
+        <DependentUpon>Program.cs</DependentUpon>
+      </Compile>
+      <Compile Update="Home.cs">
+        <SubType>Form</SubType>
+        <DependentUpon>Program.cs</DependentUpon>
+      </Compile>
+      <Compile Update="ADD_IP_device.cs">
+        <SubType>Form</SubType>
+        <DependentUpon>Program.cs</DependentUpon>
+      </Compile>
+      <Compile Update="Manager_device.cs">
+        <SubType>Form</SubType>
+        <DependentUpon>Program.cs</DependentUpon>
+      </Compile>
+      <Compile Update="CurrentUser.cs">
+        <DependentUpon>Manager_device.cs</DependentUpon>
+      </Compile>
+      <Compile Update="Menuu.cs">
+        <SubType>Form</SubType>
+        <DependentUpon>Program.cs</DependentUpon>
+      </Compile>
+      <Compile Update="business_query_device.cs">
+        <DependentUpon>ADD_IP_device.cs</DependentUpon>
+      </Compile>
+      <Compile Update="Tool_manerger.cs">
+        <SubType>Form</SubType>
+      </Compile>
+      <Compile Update="Sign_query.cs">
+        <DependentUpon>Sign_form.cs</DependentUpon>
+      </Compile>
+      <Compile Update="ILogin_query.cs">
+        <DependentUpon>login_form.cs</DependentUpon>
+      </Compile>
+      <Compile Update="ISign_query.cs">
+        <DependentUpon>Sign_form.cs</DependentUpon>
+      </Compile>
+    </ItemGroup>
+
+</Project>
